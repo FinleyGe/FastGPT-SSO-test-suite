@@ -1,4 +1,4 @@
-import { Request } from 'express';
+import { Request } from "express";
 export type RedirectFn = (data: {
   req: Request;
   redirect_uri: string;
@@ -12,7 +12,9 @@ export type GetUserInfoFn = (code: string) => Promise<{
   memberName?: string;
 }>;
 
-export type CallbackFn = (data: { req: Request }) => Promise<{ redirectUrl: string }>;
+export type CallbackFn = (data: {
+  req: Request;
+}) => Promise<{ redirectUrl: string }>;
 
 export type AssertFn = (data: {
   SAMLResponse: string;
@@ -25,7 +27,7 @@ export type UserListType = {
   memberName: string;
   avatar?: string;
   contact?: string;
-  org?: string[];
+  orgs?: string[];
 }[];
 
 export type GetUserListFn = () => Promise<UserListType>;

@@ -1,5 +1,9 @@
-# FastGPT SSO 服务模版
-这个服务是专门给私有化用户对接 SSO 的，如果不需要对接 SSO，则不需要使用这个服务。
+# FastGPT SSO Test Suite
+
+Template: https://github.com/labring/fastgpt-sso-template
+
+FastGPT SSO/用户同步 测试套件。
+更方便的生成测试数据，测试用户同步、组织架构同步。
 
 ## 开发方案
 

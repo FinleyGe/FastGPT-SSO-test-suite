@@ -4,7 +4,10 @@
   "scripts": {
     "dev": "bun --watch src/index.ts",
     "start": "bun src/index.ts",
-    "build": "bun build src/index.ts --outdir=dist --target=bun"
+    "build": "bun build src/index.ts --outdir=dist --target=bun",
+    "cli": "bun src/cli.ts",
+    "generate": "bun src/cli.ts generate",
+    "show": "bun src/cli.ts show"
   },
   "dependencies": {
     "@node-saml/node-saml": "^5.0.0",

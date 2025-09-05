@@ -6,3 +6,4 @@ node_modules
 
 # private images
 docker
+test-data

@@ -8,7 +8,12 @@ import type {
   RedirectFn,
 } from "type";
 
-import { test_getUserInfo, test_redirectFn } from "./test";
+import {
+  test_getOrgList,
+  test_getUserInfo,
+  test_GetUserList,
+  test_redirectFn,
+} from "./test";
 // TODO: other providers
 
 const providerMap: {
@@ -25,8 +30,9 @@ const providerMap: {
   test: {
     redirectFn: test_redirectFn,
     getUserInfo: test_getUserInfo,
+    getUserList: test_GetUserList,
+    getOrgList: test_getOrgList,
   },
-  // TODO: other providers
 };
 
 export function getProvider() {
